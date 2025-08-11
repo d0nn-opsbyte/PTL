@@ -1,0 +1,30 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Wireless Earbuds",
+      "price": "Ksh3000",
+      "image": "https://picsum.photos/200/150?random=1"
+    },
+    {
+      "id": "2",
+      "name": "Smart Watch",
+      "price": "Ksh8000",
+      "image": "https://picsum.photos/200/150?random=2"
+    },
+    {
+      "id": "3",
+      "name": "Bluetooth Speaker",
+      "price": "Ksh10000",
+      "image": "https://picsum.photos/200/150?random=3"
+    }
+  ],
+  "orders": [
+    {
+      "id": "eab3",
+      "productId": "3",
+      "productName": "Bluetooth Speaker",
+      "price": "Ksh10000"
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e0e6ed, #cfd9df);
+  color: #333;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  background: linear-gradient(90deg, #1e3c72, #2a5298);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #b0c4de;
+}
+
+/* ===== HOME ===== */
+.home {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.home h1 {
+  color: #1e3c72;
+  font-size: 2.5rem;
+}
+
+.home p {
+  max-width: 600px;
+  margin: 1rem auto;
+  color: #444;
+}
+
+.home button {
+  background: #1e3c72;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.home button:hover {
+  background: #2a5298;
+}
+
+/* ===== PRODUCTS ===== */
+.products {
+  padding: 2rem;
+}
+
+.products h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #1e3c72;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.product-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-card h3 {
+  color: #1e3c72;
+  margin: 1rem 0 0.5rem;
+}
+
+.product-card p {
+  color: #2a5298;
+  font-weight: bold;
+}
+
+.product-card button {
+  background: #2a5298;
+  color: white;
+  padding: 0.7rem 1.2rem;
+  margin: 1rem 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.product-card button:hover {
+  background: #1e3c72;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background: #1e3c72;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
