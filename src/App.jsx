@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import logo from './assets/ptlLogo.png'; 
 import './styles.css'
+import CheckoutForm from "./components/CheckoutForm";
 
 // ✅ Your Home page
 function Home() {
@@ -61,6 +62,8 @@ Power up with confidence.
   );
 }
 
+
+
 // ✅ Products page
 function Products() {
   const [products, setProducts] = useState([]);
@@ -111,7 +114,6 @@ function Products() {
         <p>Email: info@petomtrading.com</p>
         <p>Phone: +254 721 802 408</p>
         <p>Phone: +254 719 404 054</p>
-        <p>Phone: +254 723 601 171</p>
         <p>Location: Nairobi, Kenya</p>
         <p>Location: Eldoret, Kenya</p>
     </section>
@@ -125,14 +127,18 @@ function Products() {
   );
 }
 
+
+
 // ✅ Main App
 function App() {
   return (
     <Router>
+    
       <nav>
         <Link to="/">Home</Link>
         <Link to="/products">Products</Link>
       </nav>
+      
 
       <Routes>
         <Route path="/" element={<Home />} />
@@ -140,7 +146,7 @@ function App() {
       </Routes>
 
       <footer>
-        <p>&copy; {new Date().getFullYear()} My Store. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Petom Trading Limited. All rights reserved.</p>
       </footer>
     </Router>
   );

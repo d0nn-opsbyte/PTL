@@ -25,6 +25,12 @@
       "productId": "3",
       "productName": "Bluetooth Speaker",
       "price": "Ksh10000"
+    },
+    {
+      "id": "45dc",
+      "productId": "3",
+      "productName": "Bluetooth Speaker",
+      "price": "Ksh10000"
     }
   ]
 }
