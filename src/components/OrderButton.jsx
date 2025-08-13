@@ -1,32 +1,20 @@
+// src/components/OrderButton.jsx
 import React from "react";
 
-function OrderButton({ orderData }) {
-  const [status, setStatus] = React.useState("");
-
+export default function OrderButton() {
   const handleOrder = async () => {
-    setStatus("Processing order...");
     try {
-      const res = await fetch("/api/send-order", {
+      const response = await fetch("http://localhost:3000/order", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(orderData),
+        body: JSON.stringify({ productId: 1, quantity: 1 }),
       });
-      if (res.ok) {
-        setStatus("Order placed! Confirmation sent.");
-      } else {
-        setStatus("Failed to place order.");
-      }
-    } catch (e) {
-      setStatus("Error placing order.");
+      const data = await response.json();
+      alert("Order placed: " + data.message);
+    } catch (error) {
+      console.error("Error placing order:", error);
     }
   };
 
-  return (
-    <>
-      <button onClick={handleOrder}>Order Now</button>
-      <p>{status}</p>
-    </>
-  );
+  return <button onClick={handleOrder}>Order Now</button>;
 }
-
-export default OrderButton;

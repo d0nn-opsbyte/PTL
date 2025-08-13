@@ -1,8 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import logo from './assets/ptlLogo.png'; 
-import './styles.css'
-import CheckoutForm from "./components/CheckoutForm";
+import './styles.css';
 
 // ✅ Your Home page
 function Home() {
@@ -76,7 +75,7 @@ function Products() {
   }, []);
 
   function handleOrder(product) {
-    fetch("http://localhost:3000/orders", {
+    fetch("http://localhost:3000/products", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

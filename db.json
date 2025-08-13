@@ -17,6 +17,14 @@
       "name": "Bluetooth Speaker",
       "price": "Ksh10000",
       "image": "https://picsum.photos/200/150?random=3"
+    },
+    {
+      "id": "dadc",
+      "productId": "2",
+      "productName": "Smart Watch",
+      "price": "Ksh8000",
+      "image": "https://picsum.photos/200/150?random=3"
+  
     }
   ],
   "orders": [
@@ -31,6 +39,30 @@
       "productId": "3",
       "productName": "Bluetooth Speaker",
       "price": "Ksh10000"
+    },
+    {
+      "id": "7c3f",
+      "productId": "2",
+      "productName": "Smart Watch",
+      "price": "Ksh8000"
+    },
+    {
+      "id": "8970",
+      "productId": "1",
+      "productName": "Wireless Earbuds",
+      "price": "Ksh3000"
+    },
+    {
+      "id": "8d30",
+      "productId": "2",
+      "productName": "Smart Watch",
+      "price": "Ksh8000"
+    },
+    {
+      "id": "57b1",
+      "productId": "2",
+      "productName": "Smart Watch",
+      "price": "Ksh8000"
     }
   ]
 }
